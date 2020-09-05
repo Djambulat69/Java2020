@@ -49,11 +49,11 @@ public class Main {
         for (i = 0; i < arr.length; i++)
         {
             arr[i] = (int) (Math.random() * 10);
-            System.out.print(arr[i]);
-            System.out.print(" ");
+            System.out.print(arr[i] + " ");
         }
         for (i = 0; i < arr.length - 1; i++)
         {
+
             if (arr[i] > arr[i+1])
             {
                 int t = arr[i];
@@ -63,7 +63,7 @@ public class Main {
         }
         for (i = 0; i < arr.length; i++)
         {
-            System.out.print(arr[i]);
+            System.out.print(arr[i] + " ");
         }
     }
 }
