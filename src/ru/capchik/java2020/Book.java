@@ -8,4 +8,16 @@ public class Book {
         this.pages = pages;
         this.title = title;
     }
+    public int getPages(){
+        return pages;
+    }
+    public String getTitle(){
+        return title;
+    }
+    public void setPages(int pages){
+        this.pages = pages;
+    }
+    public void setTitle(String title){
+        this.title = title;
+    }
 }
