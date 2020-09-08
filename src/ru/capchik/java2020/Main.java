@@ -51,16 +51,18 @@ public class Main {
             arr[i] = (int) (Math.random() * 10);
             System.out.print(arr[i] + " ");
         }
-        for (i = 0; i < arr.length - 1; i++)
+        System.out.println("");
+        for (i = 0; i < arr.length; i++)
         {
-
-            if (arr[i] > arr[i+1])
-            {
-                int t = arr[i];
-                arr[i] = arr[i+1];
-                arr[i+1] = t;
+            for (int j = 0; j < arr.length-1; j++) {
+                if (arr[i] < arr[j]) {
+                    int t = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = t;
+                }
             }
         }
+
         for (i = 0; i < arr.length; i++)
         {
             System.out.print(arr[i] + " ");
