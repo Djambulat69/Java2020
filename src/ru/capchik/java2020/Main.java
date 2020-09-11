@@ -3,8 +3,8 @@ package ru.capchik.java2020;
 import java.util.Random;
 
 
-public class Main {
 
+public class Main {
     public static void main(String[] args) {
         // Task 1
         int sum = 0;
@@ -44,28 +44,67 @@ public class Main {
             String message = String.format("%.2f", a);
             System.out.println(message);
         }
-
-        int arr[] = new int[10];
-        for (i = 0; i < arr.length; i++)
+        //Math.random
+        int arr1[] = new int[10];
+        for (i = 0; i < arr1.length; i++)
         {
-            arr[i] = (int) (Math.random() * 10);
-            System.out.print(arr[i] + " ");
+            arr1[i] = (int) (Math.random() * 10);
+            System.out.print(arr1[i] + " ");
         }
-        System.out.println("");
-        for (i = 0; i < arr.length; i++)
+        System.out.print(" -> ");
+        for (i = 0; i < arr1.length; i++)
         {
-            for (int j = 0; j < arr.length-1; j++) {
-                if (arr[i] < arr[j]) {
-                    int t = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = t;
+            for (int j = 0; j < arr1.length-1; j++) {
+                if (arr1[i] < arr1[j]) {
+                    int t = arr1[i];
+                    arr1[i] = arr1[j];
+                    arr1[j] = t;
                 }
             }
         }
 
-        for (i = 0; i < arr.length; i++)
+        for (i = 0; i < arr1.length; i++)
         {
-            System.out.print(arr[i] + " ");
+            System.out.print(arr1[i] + " ");
         }
+        System.out.println();
+        //Random
+        Random random = new Random(67);
+        int arr2[] = new int[10];
+        for (i = 0; i < arr2.length; i++)
+        {
+            arr2[i] = random.nextInt(10);
+            System.out.print(arr2[i] + " ");
+        }
+        System.out.print(" -> ");
+        for (i = 0; i < arr2.length; i++)
+        {
+            for (int j = 0; j < arr2.length-1; j++) {
+                if (arr2[i] < arr2[j]) {
+                    int t = arr2[i];
+                    arr2[i] = arr2[j];
+                    arr2[j] = t;
+                }
+            }
+        }
+
+        for (i = 0; i < arr2.length; i++)
+        {
+            System.out.print(arr2[i] + " ");
+        }
+        System.out.println();
+
+        fact(6);
+
     }
+    public static int fact(int a)
+    {
+        System.out.println("a = " + a);
+        for (int i = a-1; i > 1; i--)
+        {
+            a *= i;
+            System.out.println("a = " + a);
+        }
+        return a;
+    };
 }
