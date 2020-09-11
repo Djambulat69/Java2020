@@ -9,7 +9,8 @@ public class Main {
         // Task 1
         int sum = 0;
         int[] nums = new int[]{1, 2, 3, 5};
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++)
+        {
             sum = sum + nums[i];
         }
         System.out.println(sum);
@@ -93,7 +94,7 @@ public class Main {
             System.out.print(arr2[i] + " ");
         }
         System.out.println();
-
+        //Factorial
         fact(6);
 
     }
