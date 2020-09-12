@@ -97,6 +97,9 @@ public class Main {
         //Factorial
         fact(6);
 
+        DogNursery5 nurs = new DogNursery5();
+        Dog Sharik = new Dog("Sharik", 3);
+        nurs.addDog(Sharik, 0);
     }
     public static int fact(int a)
     {
