@@ -1,4 +1,4 @@
-package ru.capchik.java2020;
+package ru.capchik.java2020.Ex2;
 
 public class Book {
     private int pages;
