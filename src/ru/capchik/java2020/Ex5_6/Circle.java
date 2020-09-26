@@ -1,4 +1,4 @@
-package ru.capchik.java2020.Ex5;
+package ru.capchik.java2020.Ex5_6;
 
 public class Circle extends Shape {
     protected double radius;
