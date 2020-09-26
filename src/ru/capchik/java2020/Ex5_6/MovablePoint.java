@@ -1,15 +1,15 @@
 package ru.capchik.java2020.Ex5_6;
 
 public class MovablePoint implements Movable {
-    private int x;
-    private int y;
+    private double x;
+    private double y;
 
-    public MovablePoint(int x, int y) {
+    public MovablePoint(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-    public int getX() {
+    public double getX() {
         return x;
     }
 
@@ -17,7 +17,7 @@ public class MovablePoint implements Movable {
         this.x = x;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
 
@@ -26,7 +26,7 @@ public class MovablePoint implements Movable {
     }
 
     @Override
-    public void move(int right, int down) {
+    public void move(double right, double down) {
         x += right;
         y += down;
     }
