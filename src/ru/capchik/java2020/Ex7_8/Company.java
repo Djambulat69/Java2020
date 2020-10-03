@@ -21,7 +21,10 @@ public class Company {
         }
     }
     public void fire(Employee emp){
-        employees.remove(emp);
+        if (employees.contains(emp)) {
+            employees.remove(emp);
+        }
+        else System.out.println("Company hasn't " + emp);
     }
 
     public static int getIncome(){
