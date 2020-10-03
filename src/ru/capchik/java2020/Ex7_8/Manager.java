@@ -2,7 +2,7 @@ package ru.capchik.java2020.Ex7_8;
 
 import java.util.Random;
 
-public class Manager extends Employee implements EmployeePosition {
+public class Manager extends Employee_ implements EmployeePosition {
     private int for_income;
 
     public Manager(double baseSalary) {

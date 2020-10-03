@@ -1,6 +1,6 @@
 package ru.capchik.java2020.Ex7_8;
 
-public class Operator extends Employee implements EmployeePosition{
+public class Operator extends Employee_ implements EmployeePosition{
 
 
 

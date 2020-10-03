@@ -1,17 +1,17 @@
 package ru.capchik.java2020.Ex7_8;
 
-public abstract class Employee {
+public abstract class Employee_ {
     protected String lastname;
     protected String firstname;
     protected double salary;
     protected String jobTitle;
 
-    public Employee() {
+    public Employee_() {
         this.salary = salary;
         this.jobTitle = jobTitle;
     }
 
-    public Employee(String lastname, String firstname) {
+    public Employee_(String lastname, String firstname) {
         this.lastname = lastname;
         this.firstname = firstname;
         this.salary = salary;

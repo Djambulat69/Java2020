@@ -38,14 +38,14 @@ public class Main {
 
         System.out.println("\nBefore fire:\n");
 
-        List<Employee> best15 =  company.getTopSalaryStaff(15);
+        List<Employee_> best15 =  company.getTopSalaryStaff(15);
         for (int i = 0; i < best15.size(); i++){
             System.out.println((i+1) + " = " + best15.get(i).getJobTitle() + " "  + best15.get(i).getSalary() );
         }
 
         System.out.println();
 
-        List<Employee> worst15 =  company.getLowestSalaryStaff(30);
+        List<Employee_> worst15 =  company.getLowestSalaryStaff(30);
         for (int i = 0; i < worst15.size(); i++){
             System.out.println((i+1) + " = " + worst15.get(i).getJobTitle() + " "  + worst15.get(i).getSalary() );
         }

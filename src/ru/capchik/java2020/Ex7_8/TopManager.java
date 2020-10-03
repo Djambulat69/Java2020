@@ -1,6 +1,6 @@
 package ru.capchik.java2020.Ex7_8;
 
-public class TopManager extends Employee implements EmployeePosition{
+public class TopManager extends Employee_ implements EmployeePosition{
 
 
     public TopManager(double baseSalary) {
