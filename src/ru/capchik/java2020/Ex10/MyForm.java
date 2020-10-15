@@ -21,22 +21,14 @@ public class MyForm {
     }
 
     private double operation(String op, double a, double b){
-        if (op.equals("+")){
-            return a + b;
-        }
-        if (op.equals("-")){
-            return a - b;
-        }
-        if (op.equals("*")){
-            return a * b;
-        }
-        if (op.equals("/")){
-            return a / b;
-        }
-        if (op.equals("")){
-            return b;
-        }
-        return 0;
+        return switch (op) {
+            case "+" -> a + b;
+            case "-" -> a - b;
+            case "*" -> a * b;
+            case "/" -> a / b;
+            case "" -> b;
+            default -> 0;
+        };
     }
     public MyForm() {
         op = "";
