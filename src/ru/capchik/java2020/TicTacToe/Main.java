@@ -1,4 +1,7 @@
-package ru.capchik.java2020.Ex10;
+package ru.capchik.java2020.TicTacToe;
+
+import ru.capchik.java2020.TicTacToe.MyForm;
+
 import javax.swing.*;
 
 public class Main {
@@ -12,5 +15,7 @@ public class Main {
         frame.setLocationRelativeTo(null);
 
         frame.add(new MyForm().getPanel1());
+
+
     }
 }

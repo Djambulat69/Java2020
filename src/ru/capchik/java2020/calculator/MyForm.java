@@ -1,7 +1,6 @@
-package ru.capchik.java2020.Ex10;
+package ru.capchik.java2020.calculator;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.*;
 
 public class MyForm {
