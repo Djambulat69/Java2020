@@ -8,7 +8,6 @@ import java.awt.event.ActionListener;
 
 public class MyForm {
     private JPanel panel;
-
     private JPanel panelCenter;
     JButton button1;
     JButton button2;
