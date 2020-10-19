@@ -1,7 +1,5 @@
 package ru.capchik.java2020.TicTacToe;
 
-import ru.capchik.java2020.TicTacToe.MyForm;
-
 import javax.swing.*;
 
 public class Main {
@@ -13,9 +11,8 @@ public class Main {
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         frame.setLocationRelativeTo(null);
-
-        frame.add(new MyForm().getPanel1());
-
+        MyForm myform = new MyForm();
+        frame.add(myform.getPanelCenter(), "Center");
 
     }
 }
