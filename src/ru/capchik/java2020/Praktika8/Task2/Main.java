@@ -13,7 +13,10 @@ public class Main {
         for (int i = 0; i < commands.length; i++) {
             switch (commands[i]){
                 case "ADD":{
-                    if (Pattern.matches("\\w+@\\w+\\.\\w+", commands[i])) mails.add(commands[i+1]);
+                    if (Pattern.matches("\\w+@\\w+\\.\\w+", commands[i+1])) {
+                        mails.add(commands[i + 1]);
+                        System.out.println("Добавлен " + commands[i+1]);
+                    }
                     else System.out.println("Неверный формат email");
                     break;
                 }
