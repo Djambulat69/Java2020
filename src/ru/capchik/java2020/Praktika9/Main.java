@@ -1,4 +1,4 @@
-package ru.capchik.java2020.Praktika9.Task1;
+package ru.capchik.java2020.Praktika9;
 
 import com.sun.source.tree.Tree;
 
