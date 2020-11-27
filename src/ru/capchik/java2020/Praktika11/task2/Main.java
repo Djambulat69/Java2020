@@ -34,8 +34,7 @@ public class Main {
                     ImageIO.write(image, "png", new File("src/ru/capchik/java2020/images/" + name));
                 }
             }
-            System.out.println(e.attr("abs:src"));
-        }
+            System.out.println(e.attr("abs:src"));        }
 
 
     }
